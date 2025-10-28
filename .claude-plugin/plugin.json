@@ -1,11 +1,20 @@
 {
   "name": "nexus",
+  "displayName": "Nexus Orchestrator",
   "version": "1.1.1",
   "description": "Master workflow orchestrator that coordinates Superpowers, ALD, and MCP plugins. Automatically detects task intent, selects optimal workflows, and delivers unified results with policy enforcement and continuous learning.",
-  "author": "dirgogoo",
-  "repository": "https://github.com/dirgogoo/nexus",
+  "author": {
+    "name": "dirgogoo",
+    "url": "https://github.com/dirgogoo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dirgogoo/nexus.git"
+  },
   "homepage": "https://github.com/dirgogoo/nexus#readme",
-  "bugs": "https://github.com/dirgogoo/nexus/issues",
+  "bugs": {
+    "url": "https://github.com/dirgogoo/nexus/issues"
+  },
   "license": "MIT",
   "keywords": [
     "workflow",
