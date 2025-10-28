@@ -1,7 +1,7 @@
 {
   "name": "nexus",
   "displayName": "Nexus Orchestrator",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Master workflow orchestrator that coordinates Superpowers, ALD, and MCP plugins. Automatically detects task intent, selects optimal workflows, and delivers unified results with policy enforcement and continuous learning.",
   "author": {
     "name": "dirgogoo",
@@ -120,5 +120,9 @@
       "3. Start using: /nexus implement [your task]"
     ],
     "manual": "See SETUP-GUIDE.md for detailed installation instructions"
+  },
+  "install": {
+    "target": "~/.claude/skills/nexus/",
+    "postInstall": "Nexus installed! Use /nexus [task] to orchestrate workflows."
   }
 }
