@@ -1,0 +1,110 @@
+{
+  "name": "nexus",
+  "version": "1.1.0",
+  "description": "Master workflow orchestrator that coordinates Superpowers, ALD, and MCP plugins. Automatically detects task intent, selects optimal workflows, and delivers unified results with policy enforcement and continuous learning.",
+  "author": "dirgogoo",
+  "repository": "https://github.com/dirgogoo/nexus",
+  "homepage": "https://github.com/dirgogoo/nexus#readme",
+  "bugs": "https://github.com/dirgogoo/nexus/issues",
+  "license": "MIT",
+  "keywords": [
+    "workflow",
+    "orchestrator",
+    "automation",
+    "superpowers",
+    "ald-system",
+    "mcp-integration",
+    "policy-enforcement",
+    "ai-coordination",
+    "development-workflow",
+    "claude-code"
+  ],
+  "main": "skills/nexus/SKILL.md",
+  "claudeCode": {
+    "minVersion": "0.8.0",
+    "skills": [
+      {
+        "name": "nexus",
+        "path": "skills/nexus/SKILL.md",
+        "description": "Master orchestrator - coordinates workflows across multiple plugins"
+      }
+    ],
+    "commands": [
+      {
+        "name": "/nexus",
+        "path": "commands/nexus.md",
+        "description": "Invoke Nexus orchestrator for intelligent workflow management"
+      },
+      {
+        "name": "/nexus-setup",
+        "path": "commands/nexus-setup.md",
+        "description": "Auto-install dependencies (ALD System, Superpowers, MCPs)"
+      }
+    ]
+  },
+  "dependencies": {
+    "required": [],
+    "recommended": [
+      {
+        "type": "marketplace",
+        "name": "superpowers",
+        "source": "superpowers@superpowers-marketplace",
+        "description": "Structured workflows (brainstorming, planning, TDD)",
+        "installCommand": "/plugin install superpowers@superpowers-marketplace"
+      },
+      {
+        "type": "marketplace",
+        "name": "superpowers-dev",
+        "source": "superpowers@superpowers-dev",
+        "description": "Development-focused workflows (systematic debugging, TDD)",
+        "installCommand": "/plugin install superpowers@superpowers-dev"
+      }
+    ],
+    "optional": [
+      {
+        "type": "mcp",
+        "name": "supabase",
+        "description": "Database operations, migrations, security audits",
+        "setupGuide": "docs/mcp-setup/supabase.md"
+      },
+      {
+        "type": "mcp",
+        "name": "chrome-devtools",
+        "description": "UI validation, E2E testing, performance audits",
+        "setupGuide": "docs/mcp-setup/chrome-devtools.md"
+      },
+      {
+        "type": "mcp",
+        "name": "github",
+        "description": "GitHub operations (issues, PRs, code review)",
+        "setupGuide": "docs/mcp-setup/github.md"
+      },
+      {
+        "type": "mcp",
+        "name": "episodic-memory",
+        "description": "Search past conversations for patterns and context",
+        "setupGuide": "docs/mcp-setup/episodic-memory.md"
+      }
+    ]
+  },
+  "features": [
+    "🎯 Intent Detection - Analyzes tasks to select optimal workflows",
+    "🔄 Multi-Plugin Coordination - Seamlessly coordinates Superpowers + ALD + MCPs",
+    "📋 Declarative Workflows - YAML-based workflow templates",
+    "✅ Policy Enforcement - Automatic validation using 155 ALD policies",
+    "🧠 Continuous Learning - Curator learns patterns and improves over time",
+    "🔌 MCP Auto-Injection - Keywords trigger MCP usage automatically",
+    "🚀 TDD by Default - Red-Green-Refactor cycle for quality code",
+    "📊 Unified Reporting - Aggregates results across all plugins",
+    "🛡️ Sprint Isolation - Prevents scope creep and regression",
+    "🎓 Self-Improving - Gets smarter with each workflow execution"
+  ],
+  "installation": {
+    "quick": [
+      "1. Install plugin: /plugin install https://github.com/dirgogoo/nexus",
+      "2. Run setup: /nexus-setup",
+      "3. Start using: /nexus implement [your task]"
+    ],
+    "manual": "See SETUP-GUIDE.md for detailed installation instructions"
+  }
+}
