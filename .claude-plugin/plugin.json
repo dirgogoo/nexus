@@ -19,13 +19,13 @@
     "development-workflow",
     "claude-code"
   ],
-  "main": "skills/nexus/SKILL.md",
+  "main": "SKILL.md",
   "claudeCode": {
     "minVersion": "0.8.0",
     "skills": [
       {
         "name": "nexus",
-        "path": "skills/nexus/SKILL.md",
+        "path": "SKILL.md",
         "description": "Master orchestrator - coordinates workflows across multiple plugins"
       }
     ],
@@ -39,6 +39,11 @@
         "name": "/nexus-setup",
         "path": "commands/nexus-setup.md",
         "description": "Auto-install dependencies (ALD System, Superpowers, MCPs)"
+      },
+      {
+        "name": "/nexus-update",
+        "path": "commands/nexus-update.md",
+        "description": "Check and install updates from GitHub"
       }
     ]
   },
