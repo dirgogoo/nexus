@@ -1,6 +1,6 @@
 {
   "name": "nexus",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Master workflow orchestrator that coordinates Superpowers, ALD, and MCP plugins. Automatically detects task intent, selects optimal workflows, and delivers unified results with policy enforcement and continuous learning.",
   "author": "dirgogoo",
   "repository": "https://github.com/dirgogoo/nexus",
