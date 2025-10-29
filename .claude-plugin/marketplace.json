@@ -1,0 +1,38 @@
+{
+  "name": "nexus-marketplace",
+  "owner": {
+    "name": "dirgogoo",
+    "url": "https://github.com/dirgogoo"
+  },
+  "metadata": {
+    "description": "Nexus - Master workflow orchestrator that coordinates Superpowers, ALD, and MCP plugins",
+    "version": "1.1.2"
+  },
+  "plugins": [
+    {
+      "name": "nexus",
+      "displayName": "Nexus Orchestrator",
+      "source": "./",
+      "description": "Master workflow orchestrator for intelligent task coordination across multiple AI systems",
+      "version": "1.1.2",
+      "main": "SKILL.md",
+      "commands": [
+        {
+          "name": "/nexus",
+          "path": "commands/nexus.md",
+          "description": "Invoke Nexus orchestrator for intelligent workflow management"
+        },
+        {
+          "name": "/nexus-setup",
+          "path": "commands/nexus-setup.md",
+          "description": "Auto-install dependencies (ALD System, Superpowers, MCPs)"
+        },
+        {
+          "name": "/nexus-update",
+          "path": "commands/nexus-update.md",
+          "description": "Check and install updates from GitHub"
+        }
+      ]
+    }
+  ]
+}
